@@ -1,10 +1,5 @@
 package com.cs5800.polymorphism;
 
-
-
-
-
-
 public class CargoShip extends Ship {
     private int tonnage;
 
