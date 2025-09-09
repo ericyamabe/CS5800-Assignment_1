@@ -1,4 +1,5 @@
 package com.cs5800.polymorphism;
+import com.cs5800.polymorphism.Ship;
 
 public class CargoShip extends Ship {
     private int tonnage;
