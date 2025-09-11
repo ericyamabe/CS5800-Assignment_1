@@ -1,4 +1,4 @@
-package com.cs5800.composition;
+package cs5800.assignment1.utils.composition;
 
 public class File {
     private String name;
@@ -16,7 +16,7 @@ public class File {
 
     public File(String name, String content) {
         this.setName(name);
-        this.setContent(content);        
+        this.setContent(content);
     }
 
     public void setName(String name) {
@@ -29,9 +29,5 @@ public class File {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getContent() {
-        return this.content;
     }
 }

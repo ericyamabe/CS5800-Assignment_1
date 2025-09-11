@@ -1,4 +1,7 @@
-class CommisionEmployee extends Employee {
+package cs5800.assignment1.utils.inheritance;
+import cs5800.assignment1.utils.inheritance.Employee;
+
+public class CommisionEmployee extends Employee {
     private double commissionRate;
     private double grossSales;
 

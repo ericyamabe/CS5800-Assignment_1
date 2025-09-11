@@ -1,4 +1,7 @@
-class SalariedEmployee extends Employee {
+package cs5800.assignment1.utils.inheritance;
+import cs5800.assignment1.utils.inheritance.Employee;
+
+public class SalariedEmployee extends Employee {
     private double weeklySalary;
 
     public SalariedEmployee() {
@@ -7,7 +10,7 @@ class SalariedEmployee extends Employee {
         this.setSocialSecurityNumber("");
         this.setWeeklySalary(0.00);
     }
-    
+
     public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber, double weeklySalary) {
         this.setFirstName(firstName);
         this.setLastName(lastName);

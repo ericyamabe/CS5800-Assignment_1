@@ -1,4 +1,4 @@
-package com.cs5800.polymorphism;
+package cs5800.assignment1.utils.polymorphism;
 
 public class Ship {
     protected String name;

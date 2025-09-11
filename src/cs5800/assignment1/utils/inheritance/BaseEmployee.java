@@ -1,4 +1,7 @@
-class BaseEmployee extends Employee {
+package cs5800.assignment1.utils.inheritance;
+import cs5800.assignment1.utils.inheritance.Employee;
+
+public class BaseEmployee extends Employee {
     private double baseSalary;
 
     public BaseEmployee() {

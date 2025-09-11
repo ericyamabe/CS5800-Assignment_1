@@ -1,3 +1,6 @@
+package cs5800.assignment1.utils.INTERFACE;
+import cs5800.assignment1.utils.INTERFACE.Payable;
+
 public class Freelancer implements Payable {
     private String firstName;
     private String lastName;

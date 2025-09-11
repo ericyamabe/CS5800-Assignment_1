@@ -1,5 +1,4 @@
-package com.cs5800.polymorphism;
-import com.cs5800.polymorphism.Ship;
+package cs5800.assignment1.utils.polymorphism;
 
 public class CargoShip extends Ship {
     private int tonnage;
@@ -23,7 +22,7 @@ public class CargoShip extends Ship {
             this.tonnage = 0;
         }
     }
-    
+
     public int getTonnage() {
         return this.tonnage;
     }

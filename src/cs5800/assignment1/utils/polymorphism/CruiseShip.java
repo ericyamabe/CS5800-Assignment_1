@@ -1,5 +1,4 @@
-package com.cs5800.polymorphism;
-import com.cs5800.polymorphism.Ship;
+package cs5800.assignment1.utils.polymorphism;
 
 public class CruiseShip extends Ship {
     private int maxPassangers;

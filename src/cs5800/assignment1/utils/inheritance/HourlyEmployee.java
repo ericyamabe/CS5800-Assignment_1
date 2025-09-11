@@ -1,4 +1,7 @@
-class HourlyEmployee extends Employee {
+package cs5800.assignment1.utils.inheritance;
+import cs5800.assignment1.utils.inheritance.Employee;
+
+public class HourlyEmployee extends Employee {
     private double wage;
     private double numberHoursWorked;
 

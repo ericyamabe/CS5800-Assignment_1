@@ -1,3 +1,5 @@
+package cs5800.assignment1.utils.aggregation;
+
 public class Instructor {
     protected String instructorFirstName;
     protected String instructorLastName;

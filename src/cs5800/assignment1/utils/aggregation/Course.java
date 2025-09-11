@@ -1,3 +1,7 @@
+package cs5800.assignment1.utils.aggregation;
+import cs5800.assignment1.utils.aggregation.Instructor;
+import cs5800.assignment1.utils.aggregation.Textbooks;
+
 public class Course {
     private String name;
     private Instructor[] instructors = new Instructor[2];
@@ -47,7 +51,7 @@ public class Course {
             this.textbooks[currentIndex] = textbooks;
             this.setTextbookIndex(nextIndex);
         } else {
-            System.out.println("Cannot add anymore Textbooks");
+            System.out.println("  ");
         }
     }
 

@@ -1,4 +1,6 @@
-class Employee {
+package cs5800.assignment1.utils.inheritance;
+
+public class Employee {
     protected String firstName;
     protected String lastName;
     protected String socialSecurityNumber;

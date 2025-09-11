@@ -1,3 +1,5 @@
+package cs5800.assignment1.utils.aggregation;
+
 public class Textbooks {
     protected String title;
     protected String author;
