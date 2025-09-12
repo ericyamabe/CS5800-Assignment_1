@@ -33,7 +33,7 @@ public class Freelancer implements Payable {
         this.lastName = lastName;
     }
 
-    public String setLastName() {
+    public String getLastName() {
         return this.lastName;
     }
 

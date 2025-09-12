@@ -43,6 +43,10 @@ public class VendorInvoice implements Payable {
         }
     }
 
+    public double getAmountDue() {
+        return this.amountDue;
+    }
+
     public double calculatePayment() {
         if(this.amountDue > 0) {
             return this.amountDue;

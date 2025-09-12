@@ -17,7 +17,7 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public String setLastName() {
+    public String getLastName() {
         return this.lastName;
     }
 
