@@ -1,6 +1,7 @@
-package cs5800.assignment1;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
+package cs5800.test.java;
+import org.junit.Assert;
+import org.junit.Test;
+
 
 import cs5800.assignment1.utils.aggregation.Course;
 import cs5800.assignment1.utils.aggregation.Instructor;
@@ -12,7 +13,7 @@ public class TestAggregation {
     public final Textbooks textbooks = new Textbooks();
 
     @Test
-    void testInstructor() {
+    public void testInstructor() {
         // Variable Setup
         final String firstName = "John";
         final String lastName = "Doe";
@@ -24,13 +25,13 @@ public class TestAggregation {
         this.instructor.setOfficeNumber(officeNumber);
 
         // Start testing
-        assertEquals(this.instructor.getInstructorFirstName(), firstName);
-        assertEquals(this.instructor.getInstructorLastName(), lastName);
-        assertEquals(this.instructor.getOfficeNumber(), officeNumber);
+        Assert.assertEquals(this.instructor.getInstructorFirstName(), firstName);
+        Assert.assertEquals(this.instructor.getInstructorLastName(), lastName);
+        Assert.assertEquals(this.instructor.getOfficeNumber(), officeNumber);
     }
 
     @Test
-    void testTextbook() {
+    public void testTextbook() {
         // Variable Setup
         final String title = "Adventures in Coding";
         final String author = "Jane Doe";
@@ -42,13 +43,13 @@ public class TestAggregation {
         this.textbooks.setPublisher(publisher);
 
         // Start testing
-        assertEquals(this.textbooks.getTitle(), title);
-        assertEquals(this.textbooks.getAuthor(), author);
-        assertEquals(this.textbooks.getPublisher(), publisher);
+        Assert.assertEquals(this.textbooks.getTitle(), title);
+        Assert.assertEquals(this.textbooks.getAuthor(), author);
+        Assert.assertEquals(this.textbooks.getPublisher(), publisher);
     }
 
     @Test
-    void testCourse() {
+    public void testCourse() {
         // Variable Setup
         final String courseName = "Intro to Computer Science";
         final String firstName = "John";
@@ -72,18 +73,18 @@ public class TestAggregation {
         this.course.setTextbooks(this.textbooks);
 
         // Start testing
-        assertEquals(this.course.getName(), courseName);
+        Assert.assertEquals(this.course.getName(), courseName);
 
         // Test instructor object in the course object
         Instructor assertedInstructor = this.course.getInstructor(0);
-        assertEquals(assertedInstructor.getInstructorFirstName(), firstName);
-        assertEquals(assertedInstructor.getInstructorLastName(), lastName);
-        assertEquals(assertedInstructor.getOfficeNumber(), officeNumber);
+        Assert.assertEquals(assertedInstructor.getInstructorFirstName(), firstName);
+        Assert.assertEquals(assertedInstructor.getInstructorLastName(), lastName);
+        Assert.assertEquals(assertedInstructor.getOfficeNumber(), officeNumber);
 
         // Test textbook object in the course object
         Textbooks assertedTextbook = this.course.getTextbooks(0);
-        assertEquals(assertedTextbook.getTitle(), title);
-        assertEquals(assertedTextbook.getAuthor(), author);
-        assertEquals(assertedTextbook.getPublisher(), publisher);
+        Assert.assertEquals(assertedTextbook.getTitle(), title);
+        Assert.assertEquals(assertedTextbook.getAuthor(), author);
+        Assert.assertEquals(assertedTextbook.getPublisher(), publisher);
     }
 }

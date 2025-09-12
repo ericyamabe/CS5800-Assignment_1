@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="googlecode.guice.junit4.core" type="repository">
+    <properties maven-id="com.googlecode.guice-junit4:guice-junit4-core:0.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/guice-junit4-core-0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guice-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.14.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/guice-junit4-core-0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/guice-junit4-core-0.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aopalliance-1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.5.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.5.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

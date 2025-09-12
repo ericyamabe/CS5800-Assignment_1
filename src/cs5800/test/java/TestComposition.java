@@ -1,6 +1,6 @@
-package cs5800.assignment1;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
+package cs5800.test.java;
+import org.junit.Assert;
+import org.junit.Test;
 
 import cs5800.assignment1.utils.composition.File;
 import cs5800.assignment1.utils.composition.Folder;
@@ -18,7 +18,7 @@ public class TestComposition {
         this.folder.setName(name);
 
         // Start testing
-        assertEquals(this.folder.getName(), name);
+        Assert.assertEquals(this.folder.getName(), name);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class TestComposition {
         this.file.setName(name);
 
         // Start testing
-        assertEquals(this.file.getName(), name);
+        Assert.assertEquals(this.file.getName(), name);
     }
 
     @Test
@@ -48,8 +48,8 @@ public class TestComposition {
         // Start testing
         Folder assertedSubFolder = this.folder.getSubFolder(0);
 
-        assertEquals(this.folder.getName(), name);
-        assertEquals(assertedSubFolder.getName(), subFolderName);
+        Assert.assertEquals(this.folder.getName(), name);
+        Assert.assertEquals(assertedSubFolder.getName(), subFolderName);
     }
 
     @Test
@@ -67,8 +67,8 @@ public class TestComposition {
         File assertedFile = this.folder.getFile(0);
 
 
-        assertEquals(this.folder.getName(), name);
-        assertEquals(assertedFile.getName(), fileName);
+        Assert.assertEquals(this.folder.getName(), name);
+        Assert.assertEquals(assertedFile.getName(), fileName);
     }
 
     @Test
@@ -89,8 +89,8 @@ public class TestComposition {
         Folder assertedSubFolder = this.folder.getSubFolder(0);
         File assertedFile = this.folder.getFile(0);
 
-        assertEquals(this.folder.getName(), name);
-        assertEquals(assertedSubFolder.getName(), subFolderName);
-        assertEquals(assertedFile.getName(), fileName);
+        Assert.assertEquals(this.folder.getName(), name);
+        Assert.assertEquals(assertedSubFolder.getName(), subFolderName);
+        Assert.assertEquals(assertedFile.getName(), fileName);
     }
 }

@@ -1,6 +1,6 @@
-package cs5800.assignment1;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
+package cs5800.test.java;
+import org.junit.Assert;
+import org.junit.Test;
 
 import cs5800.assignment1.utils.inheritance.*;
 
@@ -24,10 +24,10 @@ public class TestInheritance {
         this.salariedEmployee.setSocialSecurityNumber(this.ssn);
         this.salariedEmployee.setWeeklySalary(weeklySalary);
 
-        assertEquals(this.salariedEmployee.getFirstName(), this.firstName);
-        assertEquals(this.salariedEmployee.getLastName(), this.lastName);
-        assertEquals(this.salariedEmployee.getSocialSecurityNumber(), this.ssn);
-        assertEquals(this.salariedEmployee.getWeeklySalary(), weeklySalary);
+        Assert.assertEquals(this.salariedEmployee.getFirstName(), this.firstName);
+        Assert.assertEquals(this.salariedEmployee.getLastName(), this.lastName);
+        Assert.assertEquals(this.salariedEmployee.getSocialSecurityNumber(), this.ssn);
+        Assert.assertEquals(this.salariedEmployee.getWeeklySalary(), weeklySalary);
     }
 
     @Test
@@ -44,11 +44,11 @@ public class TestInheritance {
         this.hourlyEmployee.setNumberHoursWorked(numHoursWorked);
 
         // Start testing
-        assertEquals(this.hourlyEmployee.getFirstName(), this.firstName);
-        assertEquals(this.hourlyEmployee.getLastName(), this.lastName);
-        assertEquals(this.hourlyEmployee.getSocialSecurityNumber(), this.ssn);
-        assertEquals(this.hourlyEmployee.getNumberHoursWorked(), numHoursWorked);
-        assertEquals(this.hourlyEmployee.getWage(), hourlyWage);
+        Assert.assertEquals(this.hourlyEmployee.getFirstName(), this.firstName);
+        Assert.assertEquals(this.hourlyEmployee.getLastName(), this.lastName);
+        Assert.assertEquals(this.hourlyEmployee.getSocialSecurityNumber(), this.ssn);
+        Assert.assertEquals(this.hourlyEmployee.getNumberHoursWorked(), numHoursWorked);
+        Assert.assertEquals(this.hourlyEmployee.getWage(), hourlyWage);
     }
 
     @Test
@@ -63,10 +63,10 @@ public class TestInheritance {
         this.baseEmployee.setBaseSalary(baseSalary);
 
         // Start testing
-        assertEquals(this.baseEmployee.getFirstName(), this.firstName);
-        assertEquals(this.baseEmployee.getLastName(), this.lastName);
-        assertEquals(this.baseEmployee.getSocialSecurityNumber(), this.ssn);
-        assertEquals(this.baseEmployee.getBaseSalary(), baseSalary);
+        Assert.assertEquals(this.baseEmployee.getFirstName(), this.firstName);
+        Assert.assertEquals(this.baseEmployee.getLastName(), this.lastName);
+        Assert.assertEquals(this.baseEmployee.getSocialSecurityNumber(), this.ssn);
+        Assert.assertEquals(this.baseEmployee.getBaseSalary(), baseSalary);
     }
 
     @Test
@@ -83,10 +83,10 @@ public class TestInheritance {
         this.commisionEmployee.setGrossSales(grossSales);
 
         // Start testing
-        assertEquals(this.commisionEmployee.getFirstName(), this.firstName);
-        assertEquals(this.commisionEmployee.getLastName(), this.lastName);
-        assertEquals(this.commisionEmployee.getSocialSecurityNumber(), this.ssn);
-        assertEquals(this.commisionEmployee.getCommisionRate(), rate);
-        assertEquals(this.commisionEmployee.getGrossSales(), grossSales);
+        Assert.assertEquals(this.commisionEmployee.getFirstName(), this.firstName);
+        Assert.assertEquals(this.commisionEmployee.getLastName(), this.lastName);
+        Assert.assertEquals(this.commisionEmployee.getSocialSecurityNumber(), this.ssn);
+        Assert.assertEquals(this.commisionEmployee.getCommisionRate(), rate);
+        Assert.assertEquals(this.commisionEmployee.getGrossSales(), grossSales);
     }
 }

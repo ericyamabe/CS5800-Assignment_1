@@ -1,6 +1,6 @@
-package cs5800.assignment1;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
+package cs5800.test.java;
+import org.junit.Assert;
+import org.junit.Test;
 
 import cs5800.assignment1.utils.polymorphism.CargoShip;
 import cs5800.assignment1.utils.polymorphism.CruiseShip;
@@ -21,8 +21,8 @@ public class TestPolymorphism {
         this.ship.setYear(this.yearBuild);
 
         // Start testing
-        assertEquals(this.ship.getName(), this.shipName);
-        assertEquals(this.ship.getYear(), this.yearBuild);
+        Assert.assertEquals(this.ship.getName(), this.shipName);
+        Assert.assertEquals(this.ship.getYear(), this.yearBuild);
     }
 
     @Test
@@ -36,9 +36,9 @@ public class TestPolymorphism {
         this.cargoShip.setTonnage(tonnage);
 
         // Start testing
-        assertEquals(this.cargoShip.getName(), this.shipName);
-        assertEquals(this.cargoShip.getYear(), this.yearBuild);
-        assertEquals(this.cargoShip.getTonnage(), tonnage);
+        Assert.assertEquals(this.cargoShip.getName(), this.shipName);
+        Assert.assertEquals(this.cargoShip.getYear(), this.yearBuild);
+        Assert.assertEquals(this.cargoShip.getTonnage(), tonnage);
     }
 
     @Test
@@ -52,7 +52,7 @@ public class TestPolymorphism {
         this.cruiseShip.setMaxPassengers(maxPassengers);
 
         // Start testing
-        assertEquals(this.cruiseShip.getName(), this.shipName);
-        assertEquals(this.cruiseShip.getYear(), this.yearBuild);
-        assertEquals(this.cruiseShip.getMaxPassengers(), maxPassengers);
+        Assert.assertEquals(this.cruiseShip.getName(), this.shipName);
+        Assert.assertEquals(this.cruiseShip.getYear(), this.yearBuild);
+        Assert.assertEquals(this.cruiseShip.getMaxPassengers(), maxPassengers);
     }}

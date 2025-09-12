@@ -1,6 +1,6 @@
-package cs5800.assignment1;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
+package cs5800.test.java;
+import org.junit.Assert;
+import org.junit.Test;
 
 import cs5800.assignment1.utils.INTERFACE.*;
 
@@ -23,10 +23,10 @@ public class TestInterface {
         this.freelancer.setHoursWorked(hoursWorked);
 
         // Start testing
-        assertEquals(this.freelancer.getFirstName(), firstName);
-        assertEquals(this.freelancer.getLastName(), lastName);
-        assertEquals(this.freelancer.getHourlyRate(), hourlyRate);
-        assertEquals(this.freelancer.getHoursWorked(), hoursWorked);
+        Assert.assertEquals(this.freelancer.getFirstName(), firstName);
+        Assert.assertEquals(this.freelancer.getLastName(), lastName);
+        Assert.assertEquals(this.freelancer.getHourlyRate(), hourlyRate);
+        Assert.assertEquals(this.freelancer.getHoursWorked(), hoursWorked);
     }
 
     @Test
@@ -42,9 +42,9 @@ public class TestInterface {
         this.venderInvoice.setAmountDue(amountDue);
 
         // Start testing
-        assertEquals(this.venderInvoice.getVendorName(), vendor);
-        assertEquals(this.venderInvoice.getInvoiceNumber(), invoiceNumber);
-        assertEquals(this.venderInvoice.getAmountDue(), amountDue);
+        Assert.assertEquals(this.venderInvoice.getVendorName(), vendor);
+        Assert.assertEquals(this.venderInvoice.getInvoiceNumber(), invoiceNumber);
+        Assert.assertEquals(this.venderInvoice.getAmountDue(), amountDue);
 
     }
 }
